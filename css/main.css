@@ -1,0 +1,75 @@
+
+
+
+
+
+/* Header start */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #dde1ee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    
+}
+.logo{
+
+    width: 120px;
+    height: 120px;
+
+  
+}
+#navbar li {
+    list-style:  none;
+    padding: 0 20px;
+}
+
+
+#navbar li a{
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    position: relative;
+    transition: 0.3s ease;
+}
+#navbar li a:hover{
+
+    color: aquamarine;
+    
+}
+
+
+#navbar li a::after{ 
+
+
+content: " ";
+
+position: absolute;
+background: aquamarine;
+height: 3px;
+bottom: -4px; ;
+left: 50%;
+transition: width 0.3s ease, left 0.3s ease;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+
+    
+   width: 70%;
+   left: 50%;
+
+   transform: translateX(-70%);
+    
+}
