@@ -295,6 +295,8 @@ button{
   .content h1 {
       font-size: 24px;
   }
+ 
+
 }
 
 @media (max-width: 768px) {
@@ -314,6 +316,10 @@ button{
       padding: 12px 60px 12px 50px;
       font-size: 14px;
   }
+  #Features .all-feature {
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 @media (max-width: 480px) {
@@ -332,5 +338,68 @@ button{
   button {
       padding: 10px 50px 10px 40px;
       font-size: 13px;
+  }
+  #Features .our-feature {
+    width: 100%;
+    max-width: 300px;
+}
+}
+#Features {
+  padding: 30px 40px;
+  background-color: #daebeb;
+}
+
+#Features h1 {
+  text-align: center;
+}
+
+#Features .all-feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#Features .our-feature {
+  padding: 13px 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.2);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+#Features .our-feature:hover {
+  box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.3);
+}
+
+#Features img {
+  width: 120px;
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 1024px) {
+  #Features .all-feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Features .all-feature {
+    
+    
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #Features .all-feature {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
