@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="Css/main.css">
@@ -14,21 +15,60 @@
 <body>
     <section id="header">
 
-        <a href="#"><img src="img/myLogo.png" class="logo" alt=""></a>
+        <div class="SPage">
+            <a href="#"><img src="img/myLogo.png" class="logo" alt=""></a>
+        <div id="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+
+        </div>
+
+
+
+        <div id="overlay" onclick="closeMenu()"></div>
+
+
+
+
 
         <div>
+
+            
             <div id="navbar">
+
+                <div id="close-menu" onclick="closeMenu()">
+                    <i class="fa-solid fa-times"></i>
+                </div>
+                <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="index.html">Shop</a></li>
                 <li><a href="index.html">Blog</a></li>
                 <li><a href="index.html">About</a></li>
                 <li><a href="index.html">Contact</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
             </div>
         </div>
 
     </section>
   
-    
+
+    <section id="hero">
+        
+        <div class="content">
+            <h4>Exclusive Trade-In Deals</h4>
+            <h2><span class="highlight">Unbeatable Value Offers</span></h2>
+            <h1>Massive Discounts on Every Product</h1>
+            <p>Unlock extra savings with exclusive coupons – enjoy up to 70% OFF!</p>
+            <button>Shop Now</button>
+        </div>
+
+        <img src="img/backgroud.png" alt="">
+    </section> 
+
+
+    <script src="JS/script.js"></script>
 </body>
 </html>
