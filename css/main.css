@@ -130,6 +130,13 @@ transition: width 0.3s ease, left 0.3s ease;
     cursor: pointer;
     color: #333;
 }
+.logo{
+  
+  width: 75px;
+  height: 75px;
+
+
+}
 
 #close-menu:hover {
     color: red;
@@ -259,4 +266,71 @@ button{
   max-width: 700px;
   max-height: 80vh;
   height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  #hero {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  #hero img {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+  
+  .content {
+      order: 2;
+  }
+  
+  #hero img {
+      order: 1;
+  }
+  
+  .content h2 {
+      font-size: 36px;
+  }
+  
+  .content h1 {
+      font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+      padding: 30px;
+  }
+  
+  .content h2 {
+      font-size: 32px;
+  }
+  
+  .content h1 {
+      font-size: 22px;
+  }
+  
+  button {
+      padding: 12px 60px 12px 50px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+      font-size: 28px;
+  }
+  
+  .content h1 {
+      font-size: 20px;
+  }
+  
+  .content p {
+      font-size: 14px;
+  }
+  
+  button {
+      padding: 10px 50px 10px 40px;
+      font-size: 13px;
+  }
 }
